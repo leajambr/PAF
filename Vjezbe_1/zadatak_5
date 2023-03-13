@@ -1,0 +1,24 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+def jednadzba_pravca(x1,y1,x2,y2):
+    k = (y2-y1)/(x2-x1)
+    x = np.linspace(0,10,10)
+    l = y1 - k*x1
+    if l < 0:
+        predznak = "-"
+        print("y = {}x {} {}".format(k,predznak,abs(l)))
+    else:
+        predznak = "+"
+        print("y = {}x {} {}".format(k,predznak,abs(l)))
+
+    y = k*x + l
+
+    plt.plot(x,y,"g")
+    plt.scatter([x1],[y1], c = b)
+    plt.scatter([x2],[y2])
+    plt.savefig("pravac.pdf",format="pdf")
+    print(y)
+
+jednadzba_pravca(1,2,3,4)
+

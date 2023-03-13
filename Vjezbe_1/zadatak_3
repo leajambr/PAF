@@ -1,0 +1,15 @@
+x1 = float(input("x1: "))
+y1 = float(input("y1: "))
+x2 = float(input("x2: "))
+y2 = float(input("y2: "))
+
+k = (y2-y1)/(x2-x1)
+l = y1 - k*x1
+
+if l < 0:
+    predznak = "-"
+    print("y = {}x {} {}".format(k,predznak,abs(l)))
+    
+else:
+    predznak = "+"
+    print("Jednadžba pravca je y = {}x {} {}".format(k,predznak,abs(l)))
