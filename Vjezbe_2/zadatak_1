@@ -1,0 +1,58 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import math
+
+F = float(input("Unesi iznos sile u N "))
+
+m = float(input("Unesi masu čestice u kg: ")) 
+
+a = F/m
+
+x = 0
+v = 0
+
+t = 0
+dt = 0.1
+
+x_podaci= []     
+t_podaci = []    
+v_podaci = []     
+a_podaci = []     
+
+
+while t<= 10:
+
+    v = v + a*dt
+
+    x = x + v*dt
+
+    t = t + dt
+
+    x_podaci.append(x)    
+    t_podaci.append(t)
+    v_podaci.append(v)
+    a_podaci.append(a)
+
+print(x_podaci)
+
+plt.plot(t_podaci,a_podaci)
+plt.title("a-t graf")
+plt.xlabel("t[s]")
+plt.ylabel("a[m/s2]")
+plt.show()
+
+plt.plot(t_podaci,x_podaci)
+plt.title("x-t graf")
+plt.xlabel("t[s]")
+plt.ylabel("x[m]")
+plt.show()
+
+plt.plot(t_podaci,v_podaci)
+plt.title("v-t graf")
+plt.xlabel("t[s]")
+plt.ylabel("v[m/s]")
+plt.show()
+
+
+
+
