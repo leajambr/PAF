@@ -1,0 +1,18 @@
+def broj_iteracija(N):
+
+    p = 5
+    s = 5
+
+    for i in range(N):
+         
+        p += 1/3 
+
+        s -= 1/3
+
+    return p,s
+
+print(broj_iteracija(200))
+print(broj_iteracija(2000))
+print(broj_iteracija(20000))
+
+# samo razlomke oblika 1/2**n možemo zapisati u konačnoj binarnoj formi, sve ostalo su aproksimacije, preciznost tih apreksimacija ovisi o količini memorije (bitova) 
