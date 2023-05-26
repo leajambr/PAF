@@ -6,7 +6,7 @@ import numpy as np
 e = nabijena_čestica(q = -1, m = 1, E=(0,0,0), B =(0,0,1), v0 = (0.1,0.1,0.1), T0=(0,0,0))
 p = nabijena_čestica(q = 1, m = 1, E=(0,0,0), B =(0,0,1), v0 = (0.1,0.1,0.1), T0=(0,0,0))
 
-vrijeme = 10
+vrijeme = 10.00
 
 e_putanja = e.gibanje(vrijeme)
 p_putanja = p.gibanje(vrijeme)
