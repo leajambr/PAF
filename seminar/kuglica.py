@@ -5,9 +5,9 @@ ball_radius = 20
 ball_mass = 1.0
 
 wall_x_min = ball_radius
-wall_x_max = 700 
+wall_x_max = 700 - ball_radius
 wall_y_min = ball_radius
-wall_y_max = 500 
+wall_y_max = 500 - ball_radius
 
 def simulate_motion():
     ball_x = 100  
