@@ -5,9 +5,9 @@ ball_radius = 20
 ball_mass = 1.0
 
 wall_x_min = ball_radius
-wall_x_max = 700 - ball_radius
+wall_x_max = 700 
 wall_y_min = ball_radius
-wall_y_max = 500 - ball_radius
+wall_y_max = 500 
 
 def simulate_motion():
     ball_x = 100  
@@ -65,6 +65,5 @@ for i in range(1, len(x_coords)):
 
     plt.pause(0.01)
 
-plt.show(block=False)
-plt.pause(2)
+plt.show()
 plt.close()
